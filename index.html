@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kofeenka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <img src="logo.png" alt="Логотип" class="logo"/> <!-- классы повторяются и к ним применяется общее правило, если вместо класса указать ID, то ID должен быть уникальный -->  
+            <div class="info-text">
+                <h1>Наша Кофеенка</h1><br>
+                <p>это уютное место, где можно выпить или взять с собой<br> <strong>вкусный кофе</strong>, листовой чай или душистое какао,</p>
+                <p>а также перекусить или полноценно поесть <br>вкусной и здоровой еды за умеренную цену.</p>
+                <h4>Наши контакты и социальные сети</h4>
+                <a href="https://vk.com/kofeenka__leninskiy131" target="_blank">VKontakte</a>|
+                <a href="https://www.instagram.com/kofeenka_leninskiy131/" target="_blank">Инстаграм</a>|
+                <a href="https://yandex.ru/maps/-/CCUyVUqR3D" target="_blank">Яндекс Карты</a>|
+                <a href="https://t.me/Kofeenka" target="_blank">Телеграм</a>
+                <br>Наш телефон: <a href="tel:+7925147-71-64">8(925)147-71-64</a>
+                <br>Наш Email: <a href="mailto:kofeenka@yandex.ru?subject=Письмо%20с%20сайта">kofeenka@yandex.ru</a>
+                <br>Наш адрес: <a href="https://yandex.ru/maps/-/CCUyVUqR3D" target="_blank">Москва, Ленинский проспект, д. 131 (м. Тропарево)</a>
+            </div>  
+        </div>
+        <div class="card bg-yellow"> <!-- class работает в две стороны, то есть я могу создать класс в css, задать там же его стиль и приписать диву в хтмл этот класс -->
+            <h2>Наши принципы</h2>
+            <ol class="list">
+                <li>Качественный и вкусные кофе</li>
+                <li>Натуральные и качественные ингридиенты</li>
+                <li>Вкусная еда</li>
+                <li>Стремление порадовать каждого клиента</li>
+            </ol>
+        </div>
+            <div class="card bg-green">
+            <h2>График работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Дни недели</td>
+                    <td>Время работы</td>
+                    <td>Перерыв</td>
+                </tr>
+                <tr>
+                    <td>пн-сб</td>
+                    <td>9:00 – 19:30</td>
+                    <td>без перерывов</td>
+                </tr>
+                <tr>
+                    <td>вс</td>
+                    <td>10:00-19:00</td>
+                    <td>без перерывов</td>
+                </tr>
+            </table>
+        </div>
+            <div class="card bg-red">
+            <h2>Как нас найти (схема и видео)</h2>
+            <!-- <a href="location.html">Посмотреть локацию</a> --> <!-- так делается ссылка на другую страницу, которая создается в корне с таким же именем -->
+            <ul class="linkList">
+                <li><a class="tooltip" href="#">Схема ЯндексКарты<span><img src="yandexmap.png"/></span></a></li>
+                <li><a class="tooltip" href="#">Видео пути к Кофеенке от м. "Тропарево"<span><img src="way.gif"/></span></a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2>Связаться с нами [в разработке]</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите Ваше имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="text" id="email" placeholder="Введите Ваш email...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="30" rows="3"></textarea>
+                </div>    
+                <!-- <div class="btn"> -->
+                <input class="btn" type="submit" value="Связаться">
+            </form>
+        </div>
+        <!-- <div class="position">
+            <div class="box"></div>
+        </div> -->
+    </div>  
+    <div style="margin-bottom: 500px;"></div> <!-- чтобы внизу страницы было пустое пространство после окончания контента -->
+    <!-- <h2>д/з</h2>
+        <a href="DZHTML.html">Посмотреть д/з</a> -->
+</body>
+</html>
