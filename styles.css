@@ -26,7 +26,6 @@ body {
     box-shadow: -2px 2px 10px -1px #333; 
     border-radius: 5px;	
 }
- 
 .tooltip:hover span{
     visibility: visible;
 }
@@ -84,7 +83,7 @@ a:visited{
 
 /* box model  */
 .container {
-    max-width: 75%;
+    max-width: 90%;
     margin: auto;
     padding-top: 30px;
 }
